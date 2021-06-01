@@ -1,0 +1,129 @@
+
+
+
+ul.navbar li {
+  background-color: white;
+  background-position: center;
+  background-size: 12px;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+
+ul.navbar a {
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/*Menú ppal */
+
+nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:12px; 
+}
+            
+nav li{
+      display:inline-block;
+      alignment-baseline: left;
+      width:60px;
+      /*readaptación de altura de 
+      esta fila del navegador luego de
+      aplicar Bootstrap*/
+      height:20px;
+      padding:5px 10px;
+      background-color:white;
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      position:relative;
+      bottom:20px;
+      right:20px;
+}
+            
+nav li:hover{
+      background-color:#fff;
+      color:#000;
+}
+            
+nav li>ul{
+      display:none;
+      text-align:center;
+}
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:20px;
+      left:2px;
+}
+
+/*Menú submenú de la página escuela Información*--*/
+
+#menu ul {
+      background-color:white;
+      list-style: none;
+}
+/* se refiere a la caja del submenú desplegable*/
+#menu ul li {
+      position: relative;
+      float: left;
+      top: 0px;
+      color:black;
+      margin: 1px 1px;
+      padding: 15px 15px;
+      text-decoration: left;
+      text-align:center;
+}
+
+
+#menu ul li:hover {
+      color: black;
+}
+
+/* se refiere al submenú desplegable*/
+#menu ul ul {
+  display:none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 1rem 0;
+  text-align: center;
+  margin: 3px;
+}
+
+#menu ul li:hover>ul {
+  display: block;
+}
+
+/*Aplicado en la página de Instalaciones*/
+/*Aplicado en la página de Instalaciones*/
+
+$color:#f2d5ea;
+$elemento:navBarCont;
+
+/* aplico each sobre la caja */
+@each $elemento in (navBarCont){
+   .#{$elemento}{background-color: $color;}}
+
+/* aplico for sobre el submenú */
+@for $i from 1 through 5 {
+  .estructuraEdilicia-#{$i} { width: 2em * $i; }
+}
+
+/* aplico map para colorear al desplegar la selección del submenú */
+$estructuraEdilicia: ( /*Declaro mapa*/
+        estruc1: #55acee,
+        estruc2: #c0ebc4,
+        estruc3: #d4a49f,
+        estruc4: #55acee,
+        estruc5: #c0ebc4
+); 
+/*defino el bucle para usar los valores del mapa*/
+@each $estruc, $color in $estructuraEdilicia {
+   .#{$estruc} {
+       background-color: $color;
+ }
+}
+
+

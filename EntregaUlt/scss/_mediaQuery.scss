@@ -1,0 +1,25 @@
+/*¡ F I R S T  M O B I L E --comentado en la home--! */
+
+/* Versión Móvil */
+
+@media (max-height: 767px)
+{
+  body#cuerpo .col
+    { margin:16px;}
+}
+/* Versión tablet */
+@media (min-width: 768px) and (max-width: 991px)
+{
+  body#cuerpo .col 
+    { width:50%;
+      margin:0;
+      float:left; }
+}
+/*Versión escritorio */
+@media (min-width: 992px) 
+{ 
+  body#cuerpo .col 
+    { width: 25%;
+      display:block; }
+}
+
