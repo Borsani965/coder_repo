@@ -96,6 +96,16 @@ nav li:hover>ul{
   display: block;
 }
 
+navBarCont {
+  display:none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 1rem 0;
+  text-align: center;
+  margin: 3px;
+}
+
 /*Aplicado en la página de Instalaciones*/
 /*Aplicado en la página de Instalaciones*/
 
