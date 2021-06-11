@@ -1,0 +1,23 @@
+$ancho:645px;
+$azul:#003399;
+
+
+html {
+  font-size: 1rem; 
+  font-family: "Open Sans", sans-serif; 
+  }
+
+body {
+  color: black;
+  margin: 0 auto;
+  width: $ancho;
+  padding: auto;
+  /*border: 1px solid black;*/
+  /*border-radius: 1em;*/
+  /*box-sizing: content-box;*/
+}
+
+#centro {
+  /*margin-left: 350px;*/
+  width: $ancho;
+}

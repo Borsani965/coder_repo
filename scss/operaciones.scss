@@ -1,0 +1,9 @@
+$ancho:645px;
+$azul:#003399;
+
+.boxAzul {
+	background-color:$azul;
+}
+.boxAncho {
+	width: ($ancho/2); 
+}

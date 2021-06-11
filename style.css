@@ -1,0 +1,524 @@
+
+html {
+  font-size: 1rem; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 15 píxeles de altura */
+  font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuve de Google fonts */
+  }
+/*La propiedad CSS width especifica la anchura del area de contenido 
+de un elemento. El área de contenido está dentro del 
+padding, borde, y margen del elemento. 
+Las propiedades min-width y max-width sobreescriben el valor de width.*/
+
+/*Nota para la corrección: las propiedades fueron 
+aplicadas a los efectos de su prueba luego 
+se volverá a dejar como se considerará para el proyecto;*/
+
+body {
+  color: black;
+  margin: 0 auto;
+  width: 650px;
+  padding: auto;
+  /*border: 1px solid black;*/
+  /*border-radius: 1em;*/
+  /*box-sizing: content-box;*/
+}
+ /*tuve que ajustar la página principal 
+ para que respetara el diseño inicial 
+ luego de aplicar bootstrap;*/
+
+#centro {
+  /*margin-left: 350px;*/
+  width: 650px;
+}
+
+ul.navbar li {
+  background-color: white;
+  background-position: center;
+  background-size: 12px
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: 1em solid black }
+
+ul.navbar a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Agrego color a los títulos h1 y h2*/
+/* Defino font para títulos h1 */
+  h1 {
+  color: black;
+  width: 650px;
+  border: 1px solid black;
+  /*Aplico un gradiente de 90º*/
+  background: linear-gradient(90deg,#5D6D7E,#ccc);
+  /*Aplico font*/
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif;
+  /* Hice una prueba de rotación traslación 
+  sobre h1{ /*Aplico en la página ppal y al título animado*/
+  transform: translate(30px);
+  animation-duration: 2s;
+  animation-name: seVe;
+} 
+
+@keyframes seVe {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+ /*Fin h1*/
+
+h2 {font-family: Arial, letter-spacing;
+  color: black;
+  width: 645px;
+  border: 2px solid black;
+  background-image:url("Imágenes/imagenPino.png");
+  background-repeat: repeat-y;
+  background-repeat: repeat;
+  background-position: right;
+  background-size:10px;
+}
+
+/* Agrego color a los párrafos*/
+p {
+  color: black;
+  width: 645px;
+  border: 1px solid black;
+  /*Aplico un gradiente top*/
+  background:  linear-gradient(to top, #ABEBC6, #ccc);
+}
+
+/* Agrego color de la paleta a los títulos h3*/
+h3 {
+  color: #25A18E;
+  width: 645px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  line-height:24px;
+  line-height:underline overline;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+/* Agrego color a los títulos h4*/
+h4 {
+  color: #145A32;
+  width: 645px;
+  border: 1px solid black;
+  font-style: italic;
+  font-weight: 2px;
+  /*Aplico un gradiente top*/
+  background:  linear-gradient(to top, #ABEBC6, #ccc);
+}
+
+h5 {
+  color: black;
+  width: 650px;
+  font-style: italic;
+  font-weight: 2px;
+  background: linear-gradient(90deg,#25a18e,#ccc); 
+}
+
+
+.Italica {
+   font-style: italic;
+   color: #145A32;
+}
+
+/* Agrego color azul a los links que deseo destacar por ser distintos, menú ppal
+y llamada al formulario*/
+.linkAzul {
+  color:#0000FF;
+  font-style: italic;
+}
+
+
+li {/* black en las listas*/
+  color: black;
+  list-style-type: square;
+  /*list-style-position: inside; lo saqué no me gustaba*/
+}
+
+/* Tabla coloreada encabezado y texto de otro color, 
+se alinea a izq las listas ordenadas y
+los numéricos se centran*/
+table tbody th{
+  background-color: #25a18e;
+}
+table tbody td {
+  background-color: #9fffcb;
+  text-align: center;
+}
+ol {text-align: left;
+}
+/*fin tabla*/
+
+/*Menú ppal*/
+
+nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:12px; 
+}
+            
+nav li{
+      display:inline-block;
+      alignment-baseline: left
+      width:100px;
+      /*readaptación de altura de 
+      esta fila del navegador luego de
+      aplicar Bootstrap*/
+      height:35px;
+      padding:5px 10px;
+      background-color:white;
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      position:relative;
+      bottom:20px;
+      right:12px;
+}
+            
+nav li:hover{
+      background-color:#fff;
+      color:#000;
+}
+            
+nav li>ul{
+      display:none;
+      text-align:center;
+}
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:30px;
+      left:10px;
+}
+/*Menú submenú de la página escuela Información*--*/
+#menu ul {
+      background-color:white;
+      list-style: none;
+}
+
+#menu ul li {
+      position: relative;
+      float: left;
+      top: 0px;
+      color:black;
+      margin: 5px;
+      text-decoration: left;
+}
+
+#menu ul li:hover {
+      color: grey;
+}
+
+#menu ul ul {
+  display:none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 1rem 0;
+}
+
+#menu ul li:hover>ul {
+  display: block;
+}
+
+
+/*Aplico Flexbox a la página de Niveles*/
+.secciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 10rem;
+  background-color: #FFE4E1;
+  flex-grow: 10px;
+}
+
+.imagenes { 
+  display: flex;
+  flex-direction: column;
+  background-color: #D5F5E3; 
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+.item { 
+  background-color: #D5F5E3; 
+  align-content: space-between;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-size:10px;
+}
+
+/* Hice una prueba de animación*/
+/*Aplico en la página Niveles/secciones*/
+@keyframes un_efecto{
+       50%{ width: 300px;
+       margin-left: 200px; 
+       background-color: #25a18e; }
+    }   
+
+#animaNiveles{
+ width: 400px;
+ height: 50px;
+ background-color: #9fffcb;
+ text-align: center;
+ animation-name: un_efecto;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in;
+ animation-duration: 2s;
+ animation-delay: 0s;
+}
+
+/*Fin Flexbox*/
+
+
+/*Aplico Grid a Página de Novedades*/
+#grilla {
+   display: grid;
+   grid-template-rows: 400px 1fr 1fr 75px; 
+   grid-template-columns: 20% auto 15%;
+   grid-template-areas:
+     "navImagen3 galeria galeria"
+     "navImagen3 imagen1 publica"
+     "navImagen3 imagen2 publica"
+     "navImagen3 piePagina piePagina";  
+}
+
+.border {
+   border: 1px solid black;
+}
+
+header#galeria {
+   grid-area: galeria;
+   background-image: url("Imágenes/imagGrande5.png");
+   background-size: cover;
+   background-position: center;
+   color: black;
+   font-weight: bolder;
+   font-style: oblique;
+   text-shadow: 1px 1px #558ABB;
+ }
+
+section#imagen1 {
+   grid-area: imagen1;
+   background-image: url("Imágenes/imag3.png");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   font-weight: bolder;
+   text-shadow: 3px 3px #558ABB;     
+}
+
+section#imagen2 {
+   grid-area: imagen2; 
+   background-image: url("Imágenes/imag4.png");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   font-weight: bolder;
+   text-shadow: 3px 3px #558ABB;   
+}
+
+nav#navImagen3 {
+   grid-area: navImagen3;
+   background-image: url("Imágenes/imag5.png");
+   background-position: center;
+   color: black;
+   font-weight: bolder;
+   text-shadow: 1px 1px #558ABB;
+   text-align: center;
+}
+
+aside#publica {
+   grid-area: publica;
+   background-image: url("Imágenes/imag6.png");
+   background-position: center;
+   background-size: cover;
+   color: black;
+   text-shadow: 1px 1px #558ABB;
+   font-weight: bolder;
+   font-style: oblique;
+}
+
+footer#piePagina {
+   grid-area: piePagina;
+   background-image: url("Imágenes/imag1.png");
+   color: orange;
+   text-shadow: 1px 1px #558ABB;
+   font-weight: bolder;
+}
+/*Fin Grilla*/
+
+
+
+/* Formateo con flex contenedores de texto 
+para indicar las novedades destacadas*/
+
+.textos {
+   width: 650px;
+   margin-bottom: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.textos div{
+   background-color: #9fffcb;
+   width: 245px;
+   height: 45vh;
+   display: flex;
+   color: black;
+   flex-direction:column;
+   padding: 40px;
+}
+
+.textos div h5{
+   width: 200px;
+   height: 30vh;
+   font-size: 20px;
+   margin-bottom: 20px;
+   border-bottom: solid 2px #00a5cf;
+   padding-bottom: 30px;
+}
+
+.textos div a{
+   width: 200px;
+   height: 60vh;
+   font-size: 15px;
+   margin-bottom: 30px;
+   padding-bottom: 30px;
+   line-height: 20px; 
+}
+
+/*Prueba transform botón MORE del texto Pág de Novedades*/
+#escala {
+  transform: scale(0.5); /* Igual que: scaleX(0.5) scaleY(0.5) */
+  transform: skew(-8deg); /* Igual skewX(8deg) */
+  background-color: #25A18E;
+  text-align: center;
+}
+
+/*Fin formateo textos*/
+
+/*Aplico Grid a Página Departamentos*/
+#grillaDeptos {
+   display: grid;
+   grid-template-rows: 200px 100px 100px 100px; 
+   grid-template-columns: 40% auto 15%;
+   grid-template-areas:
+     "navIdiomas galeria2 galeria2"
+     "navIdiomas lenguaje naturales"
+     "navIdiomas matem naturales"
+     "navIdiomas educFísica educFísica";  
+}
+
+header#galeria2 {
+   grid-area: galeria2;
+   background-image: url("Imágenes/sociales.png");
+   background-size: cover;
+   background-position: center;
+   color: orange;
+   font-weight: bolder;
+   font-style: oblique;
+   text-shadow: 1px 1px #558ABB;
+ }
+
+section#lenguaje {
+   grid-area: lenguaje;
+   background-image: url("Imágenes/lenguaje.png");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   font-weight: bolder;
+   text-shadow: 3px 3px #558ABB;     
+}
+
+section#matem {
+   grid-area: matem; 
+   background-image: url("Imágenes/matemática.png");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   font-weight: bolder;
+   text-shadow: 3px 3px #558ABB;   
+}
+
+nav#navIdiomas {
+   grid-area: navIdiomas;
+   background-image: url("Imágenes/idiomas.png");
+   background-position: center;
+   color: orange;
+   font-weight: bolder;
+   text-shadow: 1px 1px #558ABB;
+   text-align: center;
+}
+
+aside#naturales {
+   grid-area: naturales;
+   background-image: url("Imágenes/naturales.png");
+   background-position: center;
+   background-size: cover;
+   color: white;
+   text-shadow: 1px 1px #558ABB;
+   font-weight: bolder;
+   font-style: oblique;
+}
+
+footer#educFísica {
+   grid-area: educFísica;
+   background-image: url("Imágenes/educFísica.png");
+   color: orange;
+   text-shadow: 1px 1px #558ABB;
+   font-weight: bolder;
+}
+/*Fin Grilla Departamentos*/
+/*¡ F I R S T  M O B I L E --comentado en la home--! */
+
+/* Versión Móvil */
+
+@media (max-height: 767px)
+{
+  body#cuerpo .col
+    { margin:16px;}
+}
+/* Versión tablet */
+@media (min-width: 768px) and (max-width: 991px)
+{
+  body#cuerpo .col 
+    { width:50%;
+      margin:0;
+      float:left; }
+}
+/*Versión escritorio */
+@media (min-width: 992px) 
+{ 
+  body#cuerpo .col 
+    { width: 25%;
+      display:block; }
+}
+/* END   F I R S T  M O B I L E  */
+
+/*HEROES THEME adaptado en la página de CalendarioAcadémico*/
+/*se apagaron las propiedades que no aplicaban al estilo de proyect*/
+.b-example-divider {
+  height: 3rem;
+  /*background-color: rgba(0, 0, 0, .1);*/
+  /*border: solid rgba(0, 0, 0, .15);*/
+  border-width: 1px 0;
+ /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), 
+ inset 0 .125em .5em rgba(0, 0, 0, .15);*/
+}
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
+/*fin theme*/
