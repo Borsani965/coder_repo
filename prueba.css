@@ -489,14 +489,23 @@ footer#educFísica {
   text-shadow: 1px 1px #558ABB;
   font-weight: bolder; }
 
+.b-example-divider {
+  height: 3rem;
+  border-width: 1px 0; }
+
+@media (min-width: 992px) {
+  .rounded-lg-3 {
+    border-radius: .3rem;
+    width: 50%; } }
+
 /*¡ F I R S T  M O B I L E --comentado en la home--! */
-/* Versión Móvil */
-@media (max-width: 462px) {
+/*Versión escritorio */
+@media (min-width: 992px) {
   body .cuerpo {
-    width: 25%;
+    width: 90%;
     margin: 10px;
     padding: 10px;
-    float: left; } }
+    display: block; } }
 
 /* Versión tablet */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -506,19 +515,10 @@ footer#educFísica {
     padding: 10px;
     float: left; } }
 
-/*Versión escritorio */
-@media (min-width: 992px) {
+/* Versión Móvil */
+@media (max-width: 767px) {
   body .cuerpo {
-    width: 90%;
+    width: 25%;
+    float: left;
     margin: 10px;
-    padding: 10px;
-    display: block; } }
-
-.b-example-divider {
-  height: 3rem;
-  border-width: 1px 0; }
-
-@media (min-width: 992px) {
-  .rounded-lg-3 {
-    border-radius: .3rem;
-    width: 50%; } }
+    padding: 10px; } }

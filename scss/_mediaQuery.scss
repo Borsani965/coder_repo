@@ -1,25 +1,5 @@
 /*¡ F I R S T  M O B I L E --comentado en la home--! */
 
-/* Versión Móvil */
-
-@media (max-width: 462px)
-{
-  body .cuerpo
-    { width:25%;
-      margin:10px;
-      padding:10px;
-      float:left;
-    }
-}
-/* Versión tablet */
-@media (min-width: 768px) and (max-width: 991px)
-{
-  body .cuerpo 
-    { width:50%;
-      margin:10px;
-      padding:10px;
-      float:left; }
-}
 /*Versión escritorio */
 @media (min-width: 992px) 
 { 
@@ -30,3 +10,24 @@
       display:block; }
 }
 
+/* Versión tablet */
+@media (min-width: 768px) and (max-width: 991px)
+{
+  body .cuerpo 
+    { width:50%;
+      margin:10px;
+      padding:10px;
+      float:left; }
+}
+
+/* Versión Móvil */
+
+@media (max-width: 767px)
+{
+  body .cuerpo
+    { width:25%;
+      float:left;
+      margin:10px;
+      padding:10px;
+    }
+}
