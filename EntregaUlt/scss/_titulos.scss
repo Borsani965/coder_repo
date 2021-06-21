@@ -4,10 +4,7 @@ h1 {
   border: 1px solid black;
   background: linear-gradient(90deg,#5D6D7E,#ccc);
   font-family: Helvetica, Geneva, Arial,
-        SunSans-Regular, sans-serif;
-   /* Hice una prueba de rotación traslación 
-  sobre h1{ /*Aplico en la página ppal y al título animado*/      
-  transform: translate(30px);
+               SunSans-Regular, sans-serif;  
   animation-duration: 2s;
   animation-name: seVe;
 }

@@ -22,9 +22,6 @@ h1 {
   border: 1px solid black;
   background: linear-gradient(90deg, #5D6D7E, #ccc);
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
-  /* Hice una prueba de rotación traslación 
-  sobre h1{ /*Aplico en la página ppal y al título animado*/
-  transform: translate(30px);
   animation-duration: 2s;
   animation-name: seVe; }
 
@@ -499,20 +496,26 @@ footer#educFísica {
 /*¡ F I R S T  M O B I L E --comentado en la home--! */
 /* Versión Móvil */
 @media (max-height: 767px) {
-  body#cuerpo .col {
-    margin: 16px; } }
+  body .cuerpo {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    float: left; } }
 
 /* Versión tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  body#cuerpo .col {
+  body .cuerpo {
     width: 50%;
-    margin: 0;
+    margin: 10px;
+    padding: 10px;
     float: left; } }
 
 /*Versión escritorio */
 @media (min-width: 992px) {
-  body#cuerpo .col {
-    width: 25%;
+  body .cuerpo {
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
     display: block; } }
 
 .b-example-divider {
@@ -525,4 +528,5 @@ footer#educFísica {
 
 @media (min-width: 992px) {
   .rounded-lg-3 {
-    border-radius: .3rem; } }
+    border-radius: .3rem;
+    width: 50%; } }
