@@ -115,7 +115,7 @@ para indicar las novedades destacadas*/
    line-height: 20px; 
 }
 
-/*Prueba transform botón MORE del texto Pág de Novedades*/
+/*Botón del texto Pág de Novedades*/
 #escala {
   transform: scale(0.5); /* Igual que: scaleX(0.5) scaleY(0.5) */
   transform: skew(-8deg); /* Igual skewX(8deg) */
@@ -150,7 +150,7 @@ header#galeria2 {
 
 section#lenguaje {
    grid-area: lenguaje;
-   background-image: url("Imágenes/lenguaje.png");
+   background-image: url("Imágenes/Lenguaje.png");
    background-position: center;
    background-size: cover;
    color: white;

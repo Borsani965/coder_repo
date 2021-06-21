@@ -7,10 +7,7 @@ body {
   color: black;
   margin: 0 auto;
   width: 645px;
-  padding: auto;
-  /*border: 1px solid black;*/
-  /*border-radius: 1em;*/
-  /*box-sizing: content-box;*/ }
+  padding: auto; }
 
 #centro {
   /*margin-left: 350px;*/
@@ -86,6 +83,7 @@ h5 {
   color: #0000FF;
   font-style: italic; }
 
+/*Aplico Bem *--*/
 .institucion__img {
   color: black;
   border: 1px solid black;
@@ -103,7 +101,7 @@ h5 {
   border: 1px solid black;
   font-style: italic; }
 
-/*Aplico Bem a la página de Niveles*--*/
+/*Aplico Bem *--*/
 .nivel {
   width: 645px; }
 
@@ -123,6 +121,7 @@ h5 {
   list-style-type: square;
   font-style: italic; }
 
+/*fin Bem *--*/
 ul.navbar li {
   background-color: white;
   background-position: center;
@@ -177,7 +176,7 @@ nav li:hover > ul {
   background-color: white;
   list-style: none; }
 
-/* se refiere a la caja del submenú desplegable*/
+/* Se refiere a la caja del submenú desplegable*/
 #menu ul li {
   position: relative;
   float: left;
@@ -191,7 +190,7 @@ nav li:hover > ul {
 #menu ul li:hover {
   color: black; }
 
-/* se refiere al submenú desplegable*/
+/* Se refiere al submenú desplegable*/
 #menu ul ul {
   display: none;
   position: absolute;
@@ -204,7 +203,6 @@ nav li:hover > ul {
 #menu ul li:hover > ul {
   display: block; }
 
-/*Aplicado en la página de Instalaciones*/
 /*Aplicado en la página de Instalaciones*/
 /* aplico each sobre la caja */
 .navBarCont {
@@ -226,8 +224,8 @@ nav li:hover > ul {
 .estructuraEdilicia-5 {
   width: 10em; }
 
-/* aplico map para colorear al desplegar la selección del submenú */
-/*defino el bucle para usar los valores del mapa*/
+/* Aplico map para colorear al desplegar la selección del submenú */
+/*Defino el bucle para usar los valores del mapa*/
 .estruc1 {
   background-color: #55acee; }
 
@@ -289,7 +287,6 @@ ol {
 .imagenes {
   display: flex;
   flex-direction: column;
-  /*background-color: #D5F5E3;*/
   justify-content: space-around;
   align-content: space-between;
   align-items: center;
@@ -297,14 +294,13 @@ ol {
   border-radius: 2rem; }
 
 .item {
-  /*background-color: #D5F5E3;*/
   align-content: space-between;
   border: 1px solid black;
   border-radius: 1rem;
   background-size: 10px;
   color: #ff0099; }
 
-/* Hice una prueba de animación*/
+/* animación*/
 /*Aplico operacione sass en la página Niveles/secciones*/
 @keyframes un_efecto {
   50% {
@@ -422,7 +418,7 @@ para indicar las novedades destacadas*/
   padding-bottom: 30px;
   line-height: 20px; }
 
-/*Prueba transform botón MORE del texto Pág de Novedades*/
+/*Botón del texto Pág de Novedades*/
 #escala {
   transform: scale(0.5);
   /* Igual que: scaleX(0.5) scaleY(0.5) */
@@ -451,7 +447,7 @@ header#galeria2 {
 
 section#lenguaje {
   grid-area: lenguaje;
-  background-image: url("Imágenes/lenguaje.png");
+  background-image: url("Imágenes/Lenguaje.png");
   background-position: center;
   background-size: cover;
   color: white;
@@ -495,7 +491,7 @@ footer#educFísica {
 
 /*¡ F I R S T  M O B I L E --comentado en la home--! */
 /* Versión Móvil */
-@media (max-height: 767px) {
+@media (max-width: 767px) {
   body .cuerpo {
     width: 25%;
     margin: 10px;
@@ -513,18 +509,14 @@ footer#educFísica {
 /*Versión escritorio */
 @media (min-width: 992px) {
   body .cuerpo {
-    width: 50%;
+    width: 90%;
     margin: 10px;
     padding: 10px;
     display: block; } }
 
 .b-example-divider {
   height: 3rem;
-  /*background-color: rgba(0, 0, 0, .1);*/
-  /*border: solid rgba(0, 0, 0, .15);*/
-  border-width: 1px 0;
-  /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), 
- inset 0 .125em .5em rgba(0, 0, 0, .15);*/ }
+  border-width: 1px 0; }
 
 @media (min-width: 992px) {
   .rounded-lg-3 {

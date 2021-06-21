@@ -2,24 +2,31 @@
 
 /* Versión Móvil */
 
-@media (max-height: 767px)
+@media (max-width: 767px)
 {
-  body#cuerpo .col
-    { margin:16px;}
+  body .cuerpo
+    { width:25%;
+      margin:10px;
+      padding:10px;
+      float:left;
+    }
 }
 /* Versión tablet */
 @media (min-width: 768px) and (max-width: 991px)
 {
-  body#cuerpo .col 
+  body .cuerpo 
     { width:50%;
-      margin:0;
+      margin:10px;
+      padding:10px;
       float:left; }
 }
 /*Versión escritorio */
 @media (min-width: 992px) 
 { 
-  body#cuerpo .col 
-    { width: 25%;
+  body .cuerpo 
+    { width:90%;
+      margin:10px;
+      padding:10px;
       display:block; }
 }
 
