@@ -491,7 +491,7 @@ footer#educFísica {
 
 /*¡ F I R S T  M O B I L E --comentado en la home--! */
 /* Versión Móvil */
-@media (max-width: 767px) {
+@media (max-width: 462px) {
   body .cuerpo {
     width: 25%;
     margin: 10px;
