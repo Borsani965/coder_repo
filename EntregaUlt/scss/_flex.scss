@@ -50,28 +50,29 @@ $dark-text: #d2e1dd;
   flex-grow: 10px;
 }
 
-.imagenes { 
+#imagenes { 
   display: flex;
   flex-direction: column;
-  /*background-color: #D5F5E3;*/ 
   justify-content: space-around;
   align-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 2rem;
+  /*border: 1px solid black;
+  border-radius: 2rem;*/
+  width: $ancho;
 }
 
 .item { 
-  /*background-color: #D5F5E3;*/ 
   align-content: space-between;
-  border: 1px solid black;
-  border-radius: 1rem;
-  background-size:10px;
-  color:#ff0099;
+  align-items: center;
+  /*border: 1px solid black;*/
+  /*border-radius: 300px;*/
+  background-size: 10px;
+  width: $ancho;
+  color: #ff0099;
 }
 
 
-/* Hice una prueba de animación*/
+/* animación*/
 /*Aplico operacione sass en la página Niveles/secciones*/
 @keyframes un_efecto{
        50%{ width: ($cien)*3;

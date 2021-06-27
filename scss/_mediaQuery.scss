@@ -3,20 +3,16 @@
 /*Versión escritorio */
 @media (min-width: 992px) 
 { 
-  body .cuerpo 
+  body.cuerpo 
     { width:90%;
-      margin:10px;
-      padding:10px;
       display:block; }
 }
 
 /* Versión tablet */
 @media (min-width: 768px) and (max-width: 991px)
 {
-  body .cuerpo 
-    { width:50%;
-      margin:10px;
-      padding:10px;
+  body.cuerpo 
+    { width: 100%;
       float:left; }
 }
 
@@ -24,8 +20,7 @@
 
 @media (max-width: 767px)
 {
-  body .cuerpo
-    { width:645px;
-      float:left;
+  body.cuerpo
+    { width: 100%;
     }
 }

@@ -12,7 +12,6 @@ ul.navbar a {
   text-align: center;
 }
 
-
 /*Menú ppal */
 
 nav a{
@@ -65,7 +64,7 @@ nav li:hover>ul{
 /* Se refiere a la caja del submenú desplegable*/
 #menu ul li {
       position: relative;
-      float: left;
+      float: center;
       top: 0px;
       color:black;
       margin: 1px 1px;

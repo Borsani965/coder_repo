@@ -6,16 +6,17 @@ html {
 body {
   color: black;
   margin: 0 auto;
-  width: 645px;
-  padding: auto; }
+  width: 80%;
+  padding: 0 auto; }
 
 #centro {
   /*margin-left: 350px;*/
-  width: 645px; }
+  width: 80%; }
 
 h1 {
   color: black;
-  width: 650px;
+  width: 80%;
+  text-align: center;
   border: 1px solid black;
   background: linear-gradient(90deg, #5D6D7E, #ccc);
   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
@@ -31,7 +32,8 @@ h1 {
 h2 {
   font-family: Arial, letter-spacing;
   color: black;
-  width: 645px;
+  width: 80%;
+  text-align: center;
   border: 2px solid black;
   background-image: url("Imágenes/imagenPino.png");
   background-repeat: repeat-y;
@@ -41,7 +43,7 @@ h2 {
 
 p {
   color: black;
-  width: 645px;
+  width: 80%;
   border: 1px solid black;
   font-style: italic;
   text-align: left;
@@ -50,7 +52,7 @@ p {
 
 h3 {
   color: #25A18E;
-  width: 645px;
+  width: 80%;
   border: 1px solid black;
   text-transform: uppercase;
   font-style: italic;
@@ -61,7 +63,7 @@ h3 {
 
 h4 {
   color: #145A32;
-  width: 645px;
+  width: 80%;
   border: 1px solid black;
   font-style: italic;
   font-weight: 2px;
@@ -70,7 +72,7 @@ h4 {
 
 h5 {
   color: black;
-  width: 645px;
+  width: 80%;
   font-style: italic;
   font-weight: 2px;
   background: linear-gradient(90deg, #25a18e, #ccc); }
@@ -91,23 +93,23 @@ h5 {
 
 .institucion__imagenEscuela1 {
   color: black;
-  width: 645px;
+  width: 80%;
   border: 1px solid black;
   font-style: italic; }
 
 .institucion__img-titulo {
   color: black;
-  width: 645px;
+  width: 80%;
   border: 1px solid black;
   font-style: italic; }
 
 /*Aplico Bem *--*/
 .nivel {
-  width: 645px; }
+  width: 80%; }
 
 .nivel__nivel1 {
   color: #CD5C5C;
-  width: 645px;
+  width: 80%;
   border: 1px solid black;
   text-transform: uppercase;
   font-style: italic;
@@ -179,7 +181,7 @@ nav li:hover > ul {
 /* Se refiere a la caja del submenú desplegable*/
 #menu ul li {
   position: relative;
-  float: left;
+  float: center;
   top: 0px;
   color: black;
   margin: 1px 1px;
@@ -244,7 +246,8 @@ nav li:hover > ul {
 li {
   /* negro en las listas*/
   color: black;
-  list-style-type: square; }
+  list-style-type: none;
+  text-align: center; }
 
 table tbody th {
   background-color: #25a18e; }
@@ -284,20 +287,23 @@ ol {
   /*background-color: #FFE4E1;*/
   flex-grow: 10px; }
 
-.imagenes {
+#imagenes {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 2rem; }
+  /*border: 1px solid black;
+  border-radius: 2rem;*/
+  width: 645px; }
 
 .item {
   align-content: space-between;
-  border: 1px solid black;
-  border-radius: 1rem;
+  align-items: center;
+  /*border: 1px solid black;*/
+  /*border-radius: 300px;*/
   background-size: 10px;
+  width: 645px;
   color: #ff0099; }
 
 /* animación*/
@@ -322,8 +328,12 @@ ol {
 #grilla {
   display: grid;
   grid-template-rows: 400px 1fr 1fr 75px;
-  grid-template-columns: 20% auto 15%;
-  grid-template-areas: "navImagen3 galeria galeria" "navImagen3 imagen1 publica" "navImagen3 imagen2 publica" "navImagen3 piePagina piePagina"; }
+  grid-template-columns: 30% 40% 30%;
+  grid-template-areas: "navImagen3 galeria galeria" "navImagen3 imagen1 publica" "navImagen3 imagen2 publica" "navImagen3 piePagina piePagina";
+  justify-content: center;
+  align-content: center;
+  background-position: center;
+  width: 645px; }
 
 .border {
   border: 1px solid black; }
@@ -345,7 +355,9 @@ section#imagen1 {
   background-size: cover;
   color: white;
   font-weight: bolder;
-  text-shadow: 3px 3px #558ABB; }
+  text-shadow: 3px 3px #558ABB;
+  justify-content: center;
+  align-content: center; }
 
 section#imagen2 {
   grid-area: imagen2;
@@ -354,7 +366,9 @@ section#imagen2 {
   background-size: cover;
   color: white;
   font-weight: bolder;
-  text-shadow: 3px 3px #558ABB; }
+  text-shadow: 3px 3px #558ABB;
+  justify-content: center;
+  align-content: center; }
 
 nav#navImagen3 {
   grid-area: navImagen3;
@@ -386,16 +400,18 @@ footer#piePagina {
 /* Formateo con flex contenedores de texto 
 para indicar las novedades destacadas*/
 .textos {
-  width: 650px;
+  width: 645px;
   margin-bottom: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  background-position: center; }
 
 .textos div {
   background-color: #9fffcb;
-  width: 245px;
+  width: 322.5px;
+  /*245*/
   height: 45vh;
   display: flex;
   color: black;
@@ -404,6 +420,7 @@ para indicar las novedades destacadas*/
 
 .textos div h5 {
   width: 200px;
+  /*200*/
   height: 30vh;
   font-size: 20px;
   margin-bottom: 20px;
@@ -412,6 +429,7 @@ para indicar las novedades destacadas*/
 
 .textos div a {
   width: 200px;
+  /*200*/
   height: 60vh;
   font-size: 15px;
   margin-bottom: 30px;
@@ -419,7 +437,7 @@ para indicar las novedades destacadas*/
   line-height: 20px; }
 
 /*Botón del texto Pág de Novedades*/
-#escala {
+.escala {
   transform: scale(0.5);
   /* Igual que: scaleX(0.5) scaleY(0.5) */
   transform: skew(-8deg);
@@ -432,27 +450,31 @@ para indicar las novedades destacadas*/
 #grillaDeptos {
   display: grid;
   grid-template-rows: 200px 100px 100px 100px;
-  grid-template-columns: 40% auto 15%;
-  grid-template-areas: "navIdiomas galeria2 galeria2" "navIdiomas lenguaje naturales" "navIdiomas matem naturales" "navIdiomas educFísica educFísica"; }
+  grid-template-columns: 40% 30% 20%;
+  grid-template-areas: "navIdiomas galeria2 galeria2" "navIdiomas lenguaje naturales" "navIdiomas matem naturales" "navIdiomas educFísica educFísica";
+  justify-content: center;
+  align-content: center;
+  background-position: center;
+  width: 645px; }
 
 header#galeria2 {
   grid-area: galeria2;
   background-image: url("Imágenes/sociales.png");
   background-size: cover;
-  background-position: center;
   color: orange;
   font-weight: bolder;
   font-style: oblique;
-  text-shadow: 1px 1px #558ABB; }
+  text-shadow: 1px 1px #558ABB;
+  background-position: center; }
 
 section#lenguaje {
   grid-area: lenguaje;
   background-image: url("Imágenes/Lenguaje.png");
-  background-position: center;
   background-size: cover;
   color: white;
   font-weight: bolder;
-  text-shadow: 3px 3px #558ABB; }
+  text-shadow: 3px 3px #558ABB;
+  background-position: center; }
 
 section#matem {
   grid-area: matem;
@@ -461,62 +483,60 @@ section#matem {
   background-size: cover;
   color: white;
   font-weight: bolder;
-  text-shadow: 3px 3px #558ABB; }
+  text-shadow: 3px 3px #558ABB;
+  background-position: center; }
 
 nav#navIdiomas {
   grid-area: navIdiomas;
   background-image: url("Imágenes/idiomas.png");
-  background-position: center;
   color: orange;
   font-weight: bolder;
   text-shadow: 1px 1px #558ABB;
-  text-align: center; }
+  text-align: center;
+  background-position: center; }
 
 aside#naturales {
   grid-area: naturales;
   background-image: url("Imágenes/naturales.png");
-  background-position: center;
   background-size: cover;
   color: white;
   text-shadow: 1px 1px #558ABB;
   font-weight: bolder;
-  font-style: oblique; }
+  font-style: oblique;
+  background-position: center; }
 
 footer#educFísica {
   grid-area: educFísica;
   background-image: url("Imágenes/educFísica.png");
   color: orange;
   text-shadow: 1px 1px #558ABB;
-  font-weight: bolder; }
+  font-weight: bolder;
+  background-position: center; }
 
 .b-example-divider {
   height: 3rem;
-  border-width: 1px 0; }
+  border-width: 1px 0;
+  width: 645px; }
 
 @media (min-width: 992px) {
   .rounded-lg-3 {
     border-radius: .3rem;
-    width: 50%; } }
+    width: 100%; } }
 
 /*¡ F I R S T  M O B I L E --comentado en la home--! */
 /*Versión escritorio */
 @media (min-width: 992px) {
-  body .cuerpo {
+  body.cuerpo {
     width: 90%;
-    margin: 10px;
-    padding: 10px;
     display: block; } }
 
 /* Versión tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  body .cuerpo {
-    width: 50%;
-    margin: 10px;
-    padding: 10px;
+  body.cuerpo {
+    width: 100%;
     float: left; } }
 
 /* Versión Móvil */
 @media (max-width: 767px) {
-  body .cuerpo {
-    width: 645px;
-    float: left; } }
+  body.cuerpo {
+    width: 100%; } }

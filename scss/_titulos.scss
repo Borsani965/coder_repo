@@ -1,6 +1,7 @@
 h1 {
   color: black;
-  width: 650px;
+  width: $ancho;
+  text-align: center;
   border: 1px solid black;
   background: linear-gradient(90deg,#5D6D7E,#ccc);
   font-family: Helvetica, Geneva, Arial,
@@ -19,7 +20,8 @@ h1 {
 
 h2 {font-family: Arial, letter-spacing;
   color: black;
-  width: 645px;
+  width: $ancho;
+  text-align: center;
   border: 2px solid black;
   background-image:url("Imágenes/imagenPino.png");
   background-repeat: repeat-y;
@@ -31,7 +33,7 @@ h2 {font-family: Arial, letter-spacing;
 
 p {
   color: black;
-  width: 645px;
+  width: $ancho;
   border: 1px solid black;
   font-style: italic;
   text-align: left;
@@ -41,7 +43,7 @@ p {
 
 h3 {
   color: #25A18E;
-  width: 645px;
+  width: $ancho;
   border: 1px solid black;
   text-transform: uppercase;
   font-style: italic;
@@ -53,7 +55,7 @@ h3 {
 
 h4 {
   color: #145A32;
-  width: 645px;
+  width: $ancho;
   border: 1px solid black;
   font-style: italic;
   font-weight: 2px;
@@ -63,7 +65,7 @@ h4 {
 
 h5 {
   color: black;
-  width: 645px;
+  width: $ancho;
   font-style: italic;
   font-weight: 2px;
   background: linear-gradient(90deg,#25a18e,#ccc); 
@@ -88,25 +90,25 @@ h5 {
 }
 .institucion__imagenEscuela1{
   color: black;
-  width: 645px;
+  width: $ancho;
   border: 1px solid black;
   font-style: italic;
  }
 .institucion__img-titulo{
   color: black;
-  width: 645px;
+  width: $ancho;
   border: 1px solid black;
   font-style: italic;
 }
 
 /*Aplico Bem *--*/
 .nivel{
- width: 645px; 
+ width: $ancho; 
 }
 
 .nivel__nivel1 {
   color: #CD5C5C;
-  width: 645px;
+  width: $ancho;
   border: 1px solid black;
   text-transform: uppercase;
   font-style: italic;

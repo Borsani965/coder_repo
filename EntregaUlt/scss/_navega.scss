@@ -1,6 +1,4 @@
 
-
-
 ul.navbar li {
   background-color: white;
   background-position: center;
@@ -13,7 +11,6 @@ ul.navbar a {
   text-decoration: none;
   text-align: center;
 }
-
 
 /*Menú ppal */
 
@@ -64,10 +61,10 @@ nav li:hover>ul{
       background-color:white;
       list-style: none;
 }
-/* se refiere a la caja del submenú desplegable*/
+/* Se refiere a la caja del submenú desplegable*/
 #menu ul li {
       position: relative;
-      float: left;
+      float: center;
       top: 0px;
       color:black;
       margin: 1px 1px;
@@ -81,7 +78,7 @@ nav li:hover>ul{
       color: black;
 }
 
-/* se refiere al submenú desplegable*/
+/* Se refiere al submenú desplegable*/
 #menu ul ul {
   display:none;
   position: absolute;
@@ -96,17 +93,6 @@ nav li:hover>ul{
   display: block;
 }
 
-navBarCont {
-  display:none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 1rem 0;
-  text-align: center;
-  margin: 3px;
-}
-
-/*Aplicado en la página de Instalaciones*/
 /*Aplicado en la página de Instalaciones*/
 
 $color:#f2d5ea;
@@ -121,7 +107,7 @@ $elemento:navBarCont;
   .estructuraEdilicia-#{$i} { width: 2em * $i; }
 }
 
-/* aplico map para colorear al desplegar la selección del submenú */
+/* Aplico map para colorear al desplegar la selección del submenú */
 $estructuraEdilicia: ( /*Declaro mapa*/
         estruc1: #55acee,
         estruc2: #c0ebc4,
@@ -129,7 +115,7 @@ $estructuraEdilicia: ( /*Declaro mapa*/
         estruc4: #55acee,
         estruc5: #c0ebc4
 ); 
-/*defino el bucle para usar los valores del mapa*/
+/*Defino el bucle para usar los valores del mapa*/
 @each $estruc, $color in $estructuraEdilicia {
    .#{$estruc} {
        background-color: $color;

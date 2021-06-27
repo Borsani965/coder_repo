@@ -1,5 +1,5 @@
-$ancho:645px;
-$azul:#003399;
+$ancho: 80%;
+$azul: #003399;
 
 
 html {
@@ -11,10 +11,7 @@ body {
   color: black;
   margin: 0 auto;
   width: $ancho;
-  padding: auto;
-  /*border: 1px solid black;*/
-  /*border-radius: 1em;*/
-  /*box-sizing: content-box;*/
+  padding: 0 auto;
 }
 
 #centro {

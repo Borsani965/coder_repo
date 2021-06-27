@@ -1,12 +1,16 @@
 #grilla {
    display: grid;
    grid-template-rows: 400px 1fr 1fr 75px; 
-   grid-template-columns: 20% auto 15%;
+   grid-template-columns: 30% 40% 30%; 
    grid-template-areas:
      "navImagen3 galeria galeria"
      "navImagen3 imagen1 publica"
      "navImagen3 imagen2 publica"
      "navImagen3 piePagina piePagina";  
+   justify-content: center;
+   align-content: center;
+   background-position: center;
+   width: $ancho;
 }
 
 .border {
@@ -22,7 +26,7 @@ header#galeria {
    font-weight: bolder;
    font-style: oblique;
    text-shadow: 1px 1px #558ABB;
- }
+}
 
 section#imagen1 {
    grid-area: imagen1;
@@ -31,7 +35,10 @@ section#imagen1 {
    background-size: cover;
    color: white;
    font-weight: bolder;
-   text-shadow: 3px 3px #558ABB;     
+   text-shadow: 3px 3px #558ABB; 
+   justify-content: center;
+   align-content: center;
+  
 }
 
 section#imagen2 {
@@ -41,7 +48,10 @@ section#imagen2 {
    background-size: cover;
    color: white;
    font-weight: bolder;
-   text-shadow: 3px 3px #558ABB;   
+   text-shadow: 3px 3px #558ABB; 
+   justify-content: center;
+   align-content: center;
+     
 }
 
 nav#navImagen3 {
@@ -80,43 +90,47 @@ footer#piePagina {
 para indicar las novedades destacadas*/
 
 .textos {
-   width: 650px;
+   width: $ancho;
    margin-bottom: 70px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   background-position: center;
 }
 .textos div{
    background-color: #9fffcb;
-   width: 245px;
+   width: $ancho/2; /*245*/
    height: 45vh;
    display: flex;
    color: black;
    flex-direction:column;
    padding: 40px;
+   
 }
 
 .textos div h5{
-   width: 200px;
+   width: 200px;/*200*/
    height: 30vh;
    font-size: 20px;
    margin-bottom: 20px;
    border-bottom: solid 2px #00a5cf;
    padding-bottom: 30px;
+   
 }
 
 .textos div a{
-   width: 200px;
+   width: 200px;/*200*/
    height: 60vh;
    font-size: 15px;
    margin-bottom: 30px;
    padding-bottom: 30px;
    line-height: 20px; 
+   
 }
 
-/*Prueba transform botón MORE del texto Pág de Novedades*/
-#escala {
+/*Botón del texto Pág de Novedades*/
+.escala {
   transform: scale(0.5); /* Igual que: scaleX(0.5) scaleY(0.5) */
   transform: skew(-8deg); /* Igual skewX(8deg) */
   background-color: #25A18E;
@@ -129,33 +143,37 @@ para indicar las novedades destacadas*/
 #grillaDeptos {
    display: grid;
    grid-template-rows: 200px 100px 100px 100px; 
-   grid-template-columns: 40% auto 15%;
+   grid-template-columns: 40% 30% 20%;
    grid-template-areas:
      "navIdiomas galeria2 galeria2"
      "navIdiomas lenguaje naturales"
      "navIdiomas matem naturales"
-     "navIdiomas educFísica educFísica";  
+     "navIdiomas educFísica educFísica"; 
+   justify-content: center;
+   align-content: center; 
+   background-position: center;
+   width: $ancho;
 }
 
 header#galeria2 {
    grid-area: galeria2;
    background-image: url("Imágenes/sociales.png");
    background-size: cover;
-   background-position: center;
    color: orange;
    font-weight: bolder;
    font-style: oblique;
    text-shadow: 1px 1px #558ABB;
+   background-position: center;
  }
 
 section#lenguaje {
    grid-area: lenguaje;
    background-image: url("Imágenes/Lenguaje.png");
-   background-position: center;
    background-size: cover;
    color: white;
    font-weight: bolder;
-   text-shadow: 3px 3px #558ABB;     
+   text-shadow: 3px 3px #558ABB; 
+   background-position: center;    
 }
 
 section#matem {
@@ -165,28 +183,29 @@ section#matem {
    background-size: cover;
    color: white;
    font-weight: bolder;
-   text-shadow: 3px 3px #558ABB;   
+   text-shadow: 3px 3px #558ABB;
+   background-position: center;   
 }
 
 nav#navIdiomas {
    grid-area: navIdiomas;
    background-image: url("Imágenes/idiomas.png");
-   background-position: center;
    color: orange;
    font-weight: bolder;
    text-shadow: 1px 1px #558ABB;
    text-align: center;
+   background-position: center;
 }
 
 aside#naturales {
    grid-area: naturales;
    background-image: url("Imágenes/naturales.png");
-   background-position: center;
    background-size: cover;
    color: white;
    text-shadow: 1px 1px #558ABB;
    font-weight: bolder;
    font-style: oblique;
+   background-position: center;
 }
 
 footer#educFísica {
@@ -195,4 +214,5 @@ footer#educFísica {
    color: orange;
    text-shadow: 1px 1px #558ABB;
    font-weight: bolder;
+   background-position: center;
 }
