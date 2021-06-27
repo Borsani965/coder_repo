@@ -3,15 +3,22 @@ li {/* negro en las listas*/
   color: black;
   list-style-type: none;
   text-align: center;
+  width: $ancho;
 }
 
+table {
+  width: $ancho;
+}
 table tbody th{
   background-color: #25a18e;
+  width: $ancho;
 }
 table tbody td {
   background-color: #9fffcb;
   text-align: center;
+  width: $ancho;
 }
 
 ol {text-align: left;
+  width: $ancho;
 }

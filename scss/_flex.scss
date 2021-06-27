@@ -46,7 +46,6 @@ $dark-text: #d2e1dd;
   justify-content: space-around;
   border: 1px solid black;
   border-radius: 10rem;
-  /*background-color: #FFE4E1;*/
   flex-grow: 10px;
 }
 
@@ -56,16 +55,12 @@ $dark-text: #d2e1dd;
   justify-content: space-around;
   align-content: space-between;
   align-items: center;
-  /*border: 1px solid black;
-  border-radius: 2rem;*/
   width: $ancho;
 }
 
 .item { 
   align-content: space-between;
   align-items: center;
-  /*border: 1px solid black;*/
-  /*border-radius: 300px;*/
   background-size: 10px;
   width: $ancho;
   color: #ff0099;
@@ -90,4 +85,12 @@ $dark-text: #d2e1dd;
  animation-timing-function: ease-in;
  animation-duration: 2s;
  animation-delay: 0s;
+}
+
+ul.leyenda{
+   display: flex;
+   color: black;
+   flex-direction:column;
+   align-items: center;
+
 }

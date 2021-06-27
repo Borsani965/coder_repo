@@ -247,17 +247,24 @@ li {
   /* negro en las listas*/
   color: black;
   list-style-type: none;
-  text-align: center; }
+  text-align: center;
+  width: 80%; }
+
+table {
+  width: 80%; }
 
 table tbody th {
-  background-color: #25a18e; }
+  background-color: #25a18e;
+  width: 80%; }
 
 table tbody td {
   background-color: #9fffcb;
-  text-align: center; }
+  text-align: center;
+  width: 80%; }
 
 ol {
-  text-align: left; }
+  text-align: left;
+  width: 80%; }
 
 /*Aplicado en la página de Ingresos*/
 /* aplico each*/
@@ -284,7 +291,6 @@ ol {
   justify-content: space-around;
   border: 1px solid black;
   border-radius: 10rem;
-  /*background-color: #FFE4E1;*/
   flex-grow: 10px; }
 
 #imagenes {
@@ -293,15 +299,11 @@ ol {
   justify-content: space-around;
   align-content: space-between;
   align-items: center;
-  /*border: 1px solid black;
-  border-radius: 2rem;*/
   width: 645px; }
 
 .item {
   align-content: space-between;
   align-items: center;
-  /*border: 1px solid black;*/
-  /*border-radius: 300px;*/
   background-size: 10px;
   width: 645px;
   color: #ff0099; }
@@ -324,6 +326,12 @@ ol {
   animation-timing-function: ease-in;
   animation-duration: 2s;
   animation-delay: 0s; }
+
+ul.leyenda {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center; }
 
 #grilla {
   display: grid;
@@ -450,7 +458,7 @@ para indicar las novedades destacadas*/
 #grillaDeptos {
   display: grid;
   grid-template-rows: 200px 100px 100px 100px;
-  grid-template-columns: 40% 30% 20%;
+  grid-template-columns: 40% 30% 30%;
   grid-template-areas: "navIdiomas galeria2 galeria2" "navIdiomas lenguaje naturales" "navIdiomas matem naturales" "navIdiomas educFísica educFísica";
   justify-content: center;
   align-content: center;
